@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="GitLab Pages">
+    <title>WAM Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="menu">
+      <ul class="menu_list">
+        <li rel="panel1" class="menu_link active">WAM Calculator</li>
+        <li rel ="panel2" class="menu_link">Unit Mark Calculator</li>
+      </ul>
+    </nav>
+    <main>
+      <div id="panel1" class = "panel active">
+          <article>
+            <h2 class="heading">WAM Calculator</h2>
+            <aside>
+              <h4>The calculated WAM is: <h4 id="calculated_WAM">00.00</h4></h4>
+            </aside>
+            <h1 id = tableArea></h1>
+          </article>
+          <button id="clear-all" class="bottom_buttons"> Clear All</button>
+          <button id="new-unit" class="bottom_buttons"> + Add a New Unit</button>
+      </div>
+      
+      <div id="panel2" class="panel">
+        <article>
+            <h2 class="heading">Unit Mark Calculator</h2>
+            <button id="new-table" class="bottom_button"> + Add a New Unit</button>  
+            <h2 id ="tableArea2"></h2>
+        </article>
+        
+        
+      </div>
+    </main>
+
+    
+  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./wam.js"></script>
+    <script type="text/javascript" src="./unitmark.js"></script>
+    <script type="text/javascript" src="./tabbing.js"></script>
+    
+</html>
+
